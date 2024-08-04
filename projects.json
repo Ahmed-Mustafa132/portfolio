@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "QR Code",
+    "description": "This is a solution to the QR code component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+    "image": "https://raw.githubusercontent.com/Ahmed-Mustafa132/qr-code/main/design/desktop-preview.jpg",
+    "github": "https://github.com/Ahmed-Mustafa132/qr-code?tab=readme-ov-file",
+    "live": "https://ahmed-mustafa132.github.io/qr-code/",
+    "lang": ["HTML", "CSS"]
+  },
+  {
+    "id": 2,
+    "title": "bookmark landing page",
+    "description": "This is a solution to the QR code component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+    "image": "https://raw.githubusercontent.com/Ahmed-Mustafa132/bookmark-landing-page-master/main/design/desktop-preview.jpg",
+    "github": "https://github.com/Ahmed-Mustafa132/bookmark-landing-page-master",
+    "live": "https://bookmark-landing-page-masterbyahmed.netlify.app/",
+    "lang": ["HTML", "CSS", "javascript"]
+  },
+  {
+    "id": 3,
+    "title": " notifications-page",
+    "description": "This is a solution to the QR code component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+    "image": "https://raw.githubusercontent.com/Ahmed-Mustafa132/notifications-page/main/design/desktop-preview.jpg",
+    "github": "https://github.com/Ahmed-Mustafa132/notifications-page/",
+    "live": "https://notifications-page-ahmedmostafa.netlify.app/",
+    "lang": ["HTML", "CSS", "javascript"]
+  },
+  {
+    "id": 4,
+    "title": " notifications-page",
+    "description": "This is a solution to the QR code component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+    "image": "https://raw.githubusercontent.com/Ahmed-Mustafa132/notifications-page/main/design/desktop-preview.jpg",
+    "github": "https://github.com/Ahmed-Mustafa132/notifications-page/",
+    "live": "https://notifications-page-ahmedmostafa.netlify.app/",
+    "lang": ["HTML", "CSS", "javascript"]
+  },
+  {
+    "id": 5,
+    "title": "project tracking intro component",
+    "description": "This is a solution to the QR code component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+    "image": "https://raw.githubusercontent.com/Ahmed-Mustafa132/project-tracking-intro-component/main/design/desktop-preview.jpg",
+    "github": "https://github.com/Ahmed-Mustafa132/project-tracking-intro-component/",
+    "live": "https://tracking-intro-component-byahmed.netlify.app/",
+    "lang": ["HTML", "CSS", "javascript"]
+  }
+]
