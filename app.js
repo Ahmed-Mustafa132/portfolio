@@ -1,10 +1,10 @@
-let mood = document.querySelector(".mood box-icon");
-let root = document.querySelector(":root");
 // light mod and night mod
+let mood = document.querySelector(".mood i");
+let root = document.querySelector(":root");
 mood.addEventListener("click", () => {
-  if (mood.classList.value == "moon") {
+  if (mood.classList.value == "fa-solid fa-moon") {
     mood.setAttribute("name", "sun");
-    mood.className = "Sun";
+    mood.className = "fa-solid fa-sun";
     root.style.setProperty("--main-color", "hsl(0, 0%, 9%)");
     root.style.setProperty("--syntax-start-color", "hsl(0, 0%, 88%)");
     root.style.setProperty("--text-color", "hsl(0, 0%, 100%)");
@@ -15,6 +15,35 @@ mood.addEventListener("click", () => {
     root.style.setProperty("--syntax-start-color", "hsl(0, 0%, 22%)");
     root.style.setProperty("--text-color", "hsl(0, 0%, 0%)");
   }
+});
+// active nav bar
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll("header nav ul a");
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("spicial");
+        document
+          .querySelector("header nav a[href*=" + id + "]")
+          .classList.add("spicial");
+      });
+    }
+  });
+};
+// viwe list function
+const btn = document.querySelector(".fa-bars");
+const x = document.querySelector(".fa-x");
+const list = document.querySelector("nav ul ");
+btn.addEventListener("click", () => {
+  list.style.transform = "translateX(0)";
+});
+x.addEventListener("click", () => {
+  list.style.transform = "translateX(100%)";
 });
 // show all skills
 const projectsContainer = document.querySelector(".projects-contener");
@@ -38,7 +67,7 @@ fetch("projects.json")
           `;
     });
   });
-// show skills
+// chose  skills
 document
   .querySelector(".portfolioItems")
   .addEventListener("click", function (event) {
