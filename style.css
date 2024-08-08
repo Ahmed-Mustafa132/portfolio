@@ -457,9 +457,14 @@ footer .about-me p {
     font-size: 1.5rem;
   }
   body {
-    max-width: 100vw;
+    box-sizing: content-box;
+    width: 100vw;
+    /* overflow: hidden; */
   }
   /* header style  */
+  header {
+    overflow: hidden;
+  }
   header nav ul {
     transform: translateX(100%);
     position: absolute;
@@ -473,6 +478,9 @@ footer .about-me p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .fa-bars {
+    display: block !important;
   }
 
   /* section 1 style  */
@@ -506,6 +514,12 @@ footer .about-me p {
     align-items: center;
     flex-direction: column;
     gap: 50px;
+  }
+  .portfolioItems ul {
+    overflow: scroll;
+  }
+  .projects-contener {
+    flex-direction: column;
   }
 }
 @keyframes mern {
