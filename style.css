@@ -21,6 +21,18 @@ a {
 i {
   color: var(--text-scaned-color);
 }
+button {
+  border: 3px solid var(--text-scaned-color);
+  border-radius: 5px;
+  background-color: var(--text-scaned-color);
+  color: var(--main-color);
+  padding: 5px;
+}
+button:hover {
+  background-color: var(--main-color);
+  color: var(--text-scaned-color);
+  cursor: pointer;
+}
 body {
   width: 100vw;
   min-height: max-content;
@@ -377,17 +389,7 @@ form textarea {
 form .msg {
   align-items: start !important ;
 }
-form button {
-  border: 3px solid var(--text-scaned-color);
-  border-radius: 5px;
-  background-color: var(--text-scaned-color);
-  color: var(--main-color);
-  padding: 5px;
-}
-form button:hover {
-  background-color: var(--main-color);
-  color: var(--text-scaned-color);
-}
+
 /* footer start  */
 .footer-contener {
   width: 90%;
