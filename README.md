@@ -4,11 +4,11 @@
 
 I'm a MERN Stack developer and this is my portfolio showcasing my projects and skills.
 
-You can explore my full portfolio here: [My Portfolio](https://github.com/shahid-khan-dev/my-portfolio)
+You can explore my full portfolio here: [My Portfolio](https://ahmed-mostafa-portflio.netlify.app/)
 
 ## About Me
 
-To learn more about me and my experiences, visit [About Me](https://github.com/shahid-khan-dev/my-portfolio)
+To learn more about me and my experiences, visit [About Me](https://ahmed-mostafa-portflio.netlify.app/#section-2)
 
 ## Get in Touch
 
