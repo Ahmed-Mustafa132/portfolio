@@ -35,12 +35,18 @@ window.onscroll = () => {
     }
   });
 };
-// viwe list function
+// open side list  function
 const btn = document.querySelector(".fa-bars");
 const x = document.querySelector(".fa-x");
-const list = document.querySelector("nav ul ");
+const list = document.querySelector("header nav");
 btn.addEventListener("click", () => {
   list.style.transform = "translateX(0)";
+});
+// close side list function
+document.querySelectorAll("nav ul li").forEach((link) => {
+  link.addEventListener("click", () => {
+    list.style.transform = "translateX(100%)";
+  });
 });
 x.addEventListener("click", () => {
   list.style.transform = "translateX(100%)";

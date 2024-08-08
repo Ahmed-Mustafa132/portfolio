@@ -82,7 +82,7 @@ header ul {
 }
 
 .fa-bars,
-.fa-x {
+.close {
   display: none !important;
 }
 ul a {
@@ -299,6 +299,7 @@ header .contactBtn:hover {
   border-radius: 5px;
 }
 .projects-contener {
+  overflow-x: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -351,7 +352,6 @@ header .contactBtn:hover {
   margin: auto;
 }
 .contact-contener .contact-info div {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -448,7 +448,7 @@ footer .about-me p {
   font-size: 1rem;
 }
 .copy-rights hr {
-  width: 50%;
+  width: 40%;
   height: 2px;
   background-color: var(--text-scaned-color);
 }
@@ -457,22 +457,37 @@ footer .about-me p {
     font-size: 1.5rem;
   }
   body {
-    max-width: 100vw;
+    box-sizing: content-box;
+    width: 100vw;
+    /* overflow: hidden; */
   }
   /* header style  */
-  header nav ul {
-    transform: translateX(100%);
-    position: absolute;
-    display: flex;
+  header {
+    overflow: auto;
+  }
+
+  header nav {
     width: 100vw;
     height: 100vh;
-    background-color: var(--main-color);
-    z-index: 999;
+    position: fixed;
     top: 0;
     left: 0;
+    background-color: var(--main-color);
+    transform: translateX(100%);
+    z-index: 99999999;
+  }
+  header nav ul {
+    height: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+  .fa-bars {
+    display: block !important;
+  }
+  .close {
+    display: block !important;
+    position: absolute;
+    top: 20px;
+    right: 50px;
   }
 
   /* section 1 style  */
@@ -487,11 +502,15 @@ footer .about-me p {
     width: 30vw;
     height: 30vw;
   }
-  #section-1 .contener .myInfo div {
-    font-size: 1rem;
+  #section-1 .contener .myInfo {
+    text-align: center;
   }
-  #section-1 .contener .myInfo h1 {
-    animation: none !important;
+  #section-1 .contener .myInfo div {
+    font-size: 1.5rem;
+  }
+  #section-1 .contener .myInfo .spicial {
+    animation: none;
+    font-size: 1rem;
     text-wrap: wrap;
   }
   /* section 2 style  */
@@ -500,12 +519,78 @@ footer .about-me p {
     flex-direction: column;
     gap: 50px;
   }
+  /* section 3 style  */
   .skillsList {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
+  }
+  .skill {
+    width: 80%;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .skill-bar {
+    width: 80vw;
+  }
+
+  .portfolioItems ul {
+    overflow: scroll;
+  }
+  .projects-contener {
+    flex-direction: column;
+  }
+  .project {
+    width: 90%;
+  }
+  .project-img img {
+    width: 100%;
+  }
+  /* section 5 style  */
+  .contact-contener {
+    display: block;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-contener div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+  }
+  form .msg {
+    align-items: center !important;
+  }
+
+  form .img {
+    display: none;
+  }
+  /* footer style  */
+  footer .footer-info {
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer .about-me {
+    display: none;
+  }
+  .copy-rights {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .copy-rights hr {
+    display: none;
   }
 }
 @keyframes mern {
