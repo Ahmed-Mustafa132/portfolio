@@ -564,6 +564,7 @@ footer .about-me p {
     flex-direction: column;
   }
   .contact-contener div {
+    width:100%;
     flex-direction: column;
     gap: 10px;
   }
