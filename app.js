@@ -10,7 +10,7 @@ mood.addEventListener("click", () => {
     root.style.setProperty("--text-color", "hsl(0, 0%, 100%)");
   } else {
     mood.setAttribute("name", "moon");
-    mood.className = "moon";
+    mood.className = "fa-solid fa-moon";
     root.style.setProperty("--main-color", "hsl(213, 69%, 95%)");
     root.style.setProperty("--syntax-start-color", "hsl(0, 0%, 22%)");
     root.style.setProperty("--text-color", "hsl(0, 0%, 0%)");
