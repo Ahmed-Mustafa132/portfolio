@@ -14,7 +14,7 @@ To learn more about me and my experiences, visit [About Me](https://ahmed-mostaf
 
 If you're interested in collaboration or have any questions, feel free to reach out:
 
-- Email: [click her](ahmedmustafa0384@gmail.com)
+- Email: { ahmedmustafa0384@gmail.com }
 - LinkedIn: [click her](https://www.linkedin.com/in/ahmed-mostafa-945a772a4/)
 - facebook: [click her](https://www.facebook.com/profile.php?id=100009378908202&locale=ar_AR)
 
